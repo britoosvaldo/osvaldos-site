@@ -1,0 +1,15 @@
+.about {
+  height: 720px;
+  background-color: #1c1c1c;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.about__me {
+  color: #ff8230;
+}
+
+.about__grid {
+  display: grid;
+}

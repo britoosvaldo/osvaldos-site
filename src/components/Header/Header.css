@@ -1,0 +1,45 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+  color: #fff;
+  height: 100px;
+  border-bottom: 1px solid #333333;
+}
+
+.nav__logo {
+  width: 116px;
+  height: 30px;
+  align-self: center;
+  margin: 0 0 0 50px;
+}
+
+.nav__links {
+  display: flex;
+  column-gap: 40px;
+  list-style-type: none;
+  align-items: center;
+  padding: 0 50px 0 0;
+}
+
+.nav__link {
+  font-family: "Inter";
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.nav__link:hover {
+  color: #ff8230;
+}
+
+.nav__button {
+  width: 118px;
+  height: 43px;
+  background-color: #ff8230;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.nav__button:hover {
+  color: #000000;
+}
