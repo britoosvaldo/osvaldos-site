@@ -1,12 +1,12 @@
 export default function About() {
   return (
     <section className="about">
+      <p className="about__me">// sobre mim</p>
+      <h2 className="about__title">
+        Quem sou <span>eu</span>
+      </h2>
       <div className="about__grid">
-        <p className="about__me">// sobre mim</p>
-        <h2 className="about_title">
-          Quem sou <span>eu</span>
-        </h2>
-        <p className="about_subtitle">
+        <p className="about__description">
           Olá! Sou um contador que migrou para a área de tecnolgia e hoje sou um
           desenvolvedor full stack. Minha jornada de programação começou por
           curiosidade e se transformou em uma paixão.
