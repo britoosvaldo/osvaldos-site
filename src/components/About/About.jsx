@@ -7,8 +7,8 @@ export default function About() {
       </h2>
       <div className="about__grid">
         <p className="about__description">
-          Olá! Sou um contador que migrou para a área de tecnolgia e hoje sou um
-          desenvolvedor full stack. Minha jornada de programação começou por
+          Olá! Sou um contador que migrou para a área de tecnologia e hoje sou
+          um desenvolvedor full stack. Minha jornada de programação começou por
           curiosidade e se transformou em uma paixão.
           <br />
           <br />
@@ -17,8 +17,8 @@ export default function About() {
           <br />
           <br />
           Quando não estou codando, estou procurando aprender novas tecnologias
-          tanta na área de programação quanto na área de IA e buscando aprender
-          cada vez mais sobre os meios digitais.
+          tantO na área de programação quanto na área de IA e buscando aprender
+          cada vez mais sobre tecnologias.
         </p>
         <div className="about__card"></div>
         <div className="about__card"></div>
