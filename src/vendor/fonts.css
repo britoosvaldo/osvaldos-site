@@ -33,3 +33,9 @@
   font-family: "Roboto Slab";
   font-weight: bold;
 }
+
+@font-face {
+  src: url(./fonts/Saira-Regular.woff2) format(woff2);
+  font-family: "Saira";
+  font-weight: normal;
+}
