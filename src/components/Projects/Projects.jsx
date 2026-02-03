@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
       <p className="my-projects">// meus projetos</p>
       <h2 className="projects__title">
         Trabalhos <span>recentes</span>

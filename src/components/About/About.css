@@ -87,3 +87,7 @@
   font-size: 13px;
   font-family: "Saira";
 }
+
+html {
+  scroll-behavior: smooth;
+}

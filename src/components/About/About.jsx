@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <p className="about__me">// sobre mim</p>
       <h2 className="about__title">
         Quem sou <span>eu</span>
@@ -17,7 +17,7 @@ export default function About() {
           <br />
           <br />
           Quando não estou codando, estou procurando aprender novas tecnologias
-          tantO na área de programação quanto na área de IA e buscando aprender
+          tanto na área de programação quanto na área de IA e buscando aprender
           cada vez mais sobre tecnologias.
         </p>
         <div className="about__card"></div>
