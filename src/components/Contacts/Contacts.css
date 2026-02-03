@@ -22,3 +22,62 @@
 .contacts__title span {
   color: #ff8230;
 }
+
+.contacts__grid {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  gap: 20px;
+}
+
+.contacts__information {
+}
+
+.contacts__subtitle {
+  font-family: "Saira";
+  font-size: 24px;
+}
+
+.contacts__description {
+  font-family: "Inter";
+  color: #9a9797;
+}
+
+.contacts__email {
+  font-family: "Inter";
+  color: #9a9797;
+}
+
+.contacts__email span {
+  color: #ffffff;
+}
+
+.contacts__location {
+  font-family: "Inter";
+  color: #9a9797;
+}
+
+.contacts__location span {
+  color: #ffffff;
+}
+
+.contacts__follow {
+  font-family: "Inter";
+  color: #9a9797;
+}
+
+.contacts__socials {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.contacts__social {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #9a9797;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
