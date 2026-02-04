@@ -17,7 +17,7 @@ export default function Contacts() {
           </p>
           <div className="contacts__contacts">
             <img src="src/images/email-icon-orange.svg" alt="" />
-            <p className="contacts__email">
+            <p className="contacts__mail">
               E-mail <br />
               <span>osvaldobrito.dev@gmail.com</span>
             </p>
@@ -30,7 +30,7 @@ export default function Contacts() {
             </p>
           </div>
           <div className="contacts__follow">
-            <p>Me siga nas redes sociais</p>
+            <p>Me siga nas redes</p>
             <div className="contacts__socials">
               <div className="contacts__social">
                 <img
@@ -56,8 +56,36 @@ export default function Contacts() {
             </div>
           </div>
         </div>
+        <div className="contacts__box">
+          <form className="contacts__form">
+            <h3 className="form__description">Nome</h3>
+            <input
+              className="contacts__name"
+              type="text"
+              placeholder="Seu nome"
+            />
+            <h3 className="form__description">E-mail</h3>
+            <input
+              className="contacts__email"
+              type="text"
+              placeholder="seu@email.com"
+            />
+            <h3 className="form__description">Mensagem</h3>
+            <input
+              className="contacts__mensage"
+              type="text"
+              placeholder="Conte-me sobre o seu projeto..."
+            />
+            <button className="contacts__btn">
+              Enviar Mensagem
+              <img
+                className="contacts__btn-icon"
+                src="src/images/mensage-icon.svg"
+              />
+            </button>
+          </form>
+        </div>
       </div>
-      <div className="contacts__form"></div>
     </section>
   );
 }

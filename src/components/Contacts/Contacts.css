@@ -27,10 +27,7 @@
   justify-content: center;
   display: grid;
   grid-template-columns: repeat(2, 400px);
-  gap: 20px;
-}
-
-.contacts__information {
+  gap: 60px;
 }
 
 .contacts__subtitle {
@@ -43,12 +40,12 @@
   color: #9a9797;
 }
 
-.contacts__email {
+.contacts__mail {
   font-family: "Inter";
   color: #9a9797;
 }
 
-.contacts__email span {
+.contacts__mail span {
   color: #ffffff;
 }
 
@@ -80,4 +77,48 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.contacts__form {
+  border: 1px solid #717070;
+  border-radius: 10px;
+  width: 400px;
+  height: 450px;
+}
+
+.form__description {
+  margin: 30px 0 0 30px;
+  font-size: 14px;
+  font-family: "Inter";
+}
+
+.contacts__name,
+.contacts__email {
+  margin: 10px 0 0 30px;
+  background-color: #000000;
+  width: 320px;
+  height: 42px;
+  border-radius: 10px;
+  border: 0.5px solid #9a9797;
+  padding: 0 0 0 15px;
+}
+
+.contacts__mensage {
+  margin: 10px 0 0 30px;
+  background-color: #000000;
+  width: 320px;
+  height: 100px;
+  border-radius: 10px;
+  border: 0.5px solid #9a9797;
+  padding: 0 0 0 15px;
+}
+
+.contacts__btn {
+  background-color: #ff8230;
+  color: #ffffff;
+  margin: 15px 0 0 30px;
+  width: 334px;
+  height: 42px;
+  border-radius: 10px;
+  cursor: pointer;
 }
