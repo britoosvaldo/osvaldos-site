@@ -20,10 +20,35 @@ export default function About() {
           tanto na área de programação quanto na área de IA e buscando aprender
           cada vez mais sobre tecnologias.
         </p>
-        <div className="about__card"></div>
-        <div className="about__card"></div>
-        <div className="about__card"></div>
-        <div className="about__card"></div>
+        <div className="about__card">
+          <img className="card__icon" src="src/images/brain-icon.svg" />
+          <h3 className="card__title">Como eu penso?</h3>
+          <p className="card__subtitle">
+            Gosto de quebrar problemas grandes em partes pequenas e resolver uma
+            por uma.
+          </p>
+        </div>
+        <div className="about__card">
+          <img className="card__icon" src="src/images/gear-icon.svg" />
+          <h3 className="card__title">Como eu trabalho?</h3>
+          <p className="card__subtitle">
+            Clean Code, componentização, reaproveitamento e atenção a UX.
+          </p>
+        </div>
+        <div className="about__card">
+          <img className="card__icon" src="src/images/rocket-icon.svg" />
+          <h3 className="card__title">O que estou buscando?</h3>
+          <p className="card__subtitle">
+            Oportunidade como dev / projetos freelancer / vagas remotas.
+          </p>
+        </div>
+        <div className="about__card">
+          <img className="card__icon" src="src/images/book-icon.svg" />
+          <h3 className="card__title">Em aprendizado constante</h3>
+          <p className="card__subtitle">
+            Boas práticas JS, React, APIs e IA aplicada.
+          </p>
+        </div>
       </div>
 
       <h3 className="about__tech">Tecnologias Utilizadas</h3>
@@ -52,8 +77,6 @@ export default function About() {
             <div className="about__skill">
               <p>Git</p>
             </div>
-
-            {/* duplicados */}
             <div className="about__skill">
               <p>HTML</p>
             </div>
