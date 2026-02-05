@@ -25,28 +25,57 @@ export default function About() {
         <div className="about__card"></div>
         <div className="about__card"></div>
       </div>
+
       <h3 className="about__tech">Tecnologias Utilizadas</h3>
-      <div className="about__skills">
-        <div className="about__skill">
-          <p>HTML</p>
-        </div>
-        <div className="about__skill">
-          <p>CSS</p>
-        </div>
-        <div className="about__skill">
-          <p>JavaScript</p>
-        </div>
-        <div className="about__skill">
-          <p>React</p>
-        </div>
-        <div className="about__skill">
-          <p>Node.js</p>
-        </div>
-        <div className="about__skill">
-          <p>Express</p>
-        </div>
-        <div className="about__skill">
-          <p>Git</p>
+
+      <div className="about__skills-wrapper">
+        <div className="about__skills-marquee">
+          <div className="about__skills-track">
+            <div className="about__skill">
+              <p>HTML</p>
+            </div>
+            <div className="about__skill">
+              <p>CSS</p>
+            </div>
+            <div className="about__skill">
+              <p>JavaScript</p>
+            </div>
+            <div className="about__skill">
+              <p>React</p>
+            </div>
+            <div className="about__skill">
+              <p>Node.js</p>
+            </div>
+            <div className="about__skill">
+              <p>Express</p>
+            </div>
+            <div className="about__skill">
+              <p>Git</p>
+            </div>
+
+            {/* duplicados */}
+            <div className="about__skill">
+              <p>HTML</p>
+            </div>
+            <div className="about__skill">
+              <p>CSS</p>
+            </div>
+            <div className="about__skill">
+              <p>JavaScript</p>
+            </div>
+            <div className="about__skill">
+              <p>React</p>
+            </div>
+            <div className="about__skill">
+              <p>Node.js</p>
+            </div>
+            <div className="about__skill">
+              <p>Express</p>
+            </div>
+            <div className="about__skill">
+              <p>Git</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -1,9 +1,10 @@
 .about {
-  height: 680px;
+  min-height: 680px;
   background-color: #1c1c1c;
   color: #ffffff;
   display: flex;
   flex-direction: column;
+  padding-bottom: 60px;
 }
 
 .about__me {
@@ -49,12 +50,12 @@
   border: 0.5px solid #717070;
   border-radius: 10px;
   background-color: #262626;
+  transition: all 0.3s ease;
 }
 
 .about__card:hover {
   transform: translateY(-5px);
   border-color: #ff8230;
-  color: #ff8230;
   box-shadow:
     0 10px 30px rgba(0, 0, 0, 0.4),
     0 0 0 1px rgba(255, 130, 48, 0.4),
@@ -62,32 +63,74 @@
 }
 
 .about__tech {
-  margin: 50px 0 0 0;
+  margin: 50px 0 20px 0;
   align-self: center;
   font-family: "Saira";
 }
 
-.about__skills {
+.about__skills-wrapper {
+  width: 900px;
+  max-width: 90%;
+  margin: 20px auto 0;
+}
+
+.about__skills-marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.about__skills-track {
   display: flex;
-  flex-direction: row;
   gap: 40px;
-  align-self: center;
-  margin: 20px 0 0 0;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+  will-change: transform;
+}
+
+.about__skills-marquee:hover .about__skills-track {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .about__skill {
   display: inline-flex;
   align-items: center;
+  height: 25px;
+  padding: 0 12px;
   border: 0.5px solid #717070;
   border-radius: 100px;
-  height: 25px;
-  padding: 0 10px;
-  margin: 10px 0 0 0;
-  font-family: "Roboto";
   font-size: 13px;
   font-family: "Saira";
+  background-color: #262626;
+  white-space: nowrap;
 }
 
-html {
-  scroll-behavior: smooth;
+.about__skills-marquee::before,
+.about__skills-marquee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.about__skills-marquee::before {
+  left: 0;
+  background: linear-gradient(to right, #1c1c1c, transparent);
+}
+
+.about__skills-marquee::after {
+  right: 0;
+  background: linear-gradient(to left, #1c1c1c, transparent);
 }
