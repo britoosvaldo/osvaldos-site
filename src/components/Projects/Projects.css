@@ -39,16 +39,62 @@
   border: 0.5px solid #717070;
   border-radius: 10px;
   background-color: #262626;
+  display: flex;
+  flex-direction: column;
+  font-family: "Saira";
 }
 
 .projects__card:hover {
   transform: translateY(-5px);
   border-color: #ff8230;
-  color: #ff8230;
   box-shadow:
     0 10px 30px rgba(0, 0, 0, 0.4),
     0 0 0 1px rgba(255, 130, 48, 0.4),
     0 0 20px rgba(255, 130, 48, 0.25);
+}
+
+.site__icon {
+  width: 45px;
+  height: 45px;
+  margin: 0;
+  position: relative;
+  left: 15px;
+  top: 15px;
+}
+
+.github__icon {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  left: 240px;
+  top: -20px;
+  cursor: pointer;
+}
+
+.link__icon {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  left: 270px;
+  top: -40px;
+  cursor: pointer;
+}
+
+.site__title {
+  margin: 0 0 0 15px;
+  font-size: 18px;
+}
+
+.site__description {
+  margin: 10px 15px 0 15px;
+  font-size: 14px;
+  color: #9a9797;
+}
+
+.site__techs {
+  margin: auto;
+  font-size: 10px;
+  color: #9a9797;
 }
 
 .projects__link {
