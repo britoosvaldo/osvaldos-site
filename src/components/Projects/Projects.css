@@ -53,7 +53,7 @@
     0 0 20px rgba(255, 130, 48, 0.25);
 }
 
-.site__icon {
+.card__icon {
   width: 45px;
   height: 45px;
   margin: 0;
@@ -62,7 +62,7 @@
   top: 15px;
 }
 
-.github__icon {
+.github__link {
   width: 15px;
   height: 15px;
   position: relative;
@@ -71,13 +71,23 @@
   cursor: pointer;
 }
 
-.link__icon {
+.github__icon {
+  width: 15px;
+  height: 15px;
+}
+
+.site__link {
   width: 15px;
   height: 15px;
   position: relative;
   left: 270px;
-  top: -40px;
+  top: -35px;
   cursor: pointer;
+}
+
+.site__icon {
+  width: 15px;
+  height: 15px;
 }
 
 .site__title {
