@@ -1,3 +1,7 @@
+import gitHubIcon from "../../images/github-icon.svg";
+import linkedinIcon from "../../images/linkedin-icon.svg";
+import instaIcon from "../../images/instagram-icon.svg";
+
 import { useRef, useState } from "react";
 import "./main.css";
 
@@ -41,25 +45,13 @@ export default function Main() {
 
       <div className="main__contacts">
         <div className="main__social">
-          <img
-            src="src/images/github-icon.svg"
-            className="main__icons"
-            alt="GitHub"
-          />
+          <img src={gitHubIcon} className="main__icons" alt="GitHub Icon" />
         </div>
         <div className="main__social">
-          <img
-            src="src/images/linkedin-icon.svg"
-            className="main__icons"
-            alt="LinkedIn"
-          />
+          <img src={linkedinIcon} className="main__icons" alt="LinkedIn" />
         </div>
         <div className="main__social">
-          <img
-            src="src/images/instagram-icon.svg"
-            className="main__icons"
-            alt="Instagram"
-          />
+          <img src={instaIcon} className="main__icons" alt="Instagram" />
         </div>
       </div>
 
