@@ -1,3 +1,8 @@
+import brainIcon from "../../images/brain-icon.svg";
+import gearIcon from "../../images/gear-icon.svg";
+import rocketIcon from "../../images/rocket-icon.svg";
+import bookIcon from "../../images/book-icon.svg";
+
 export default function About() {
   return (
     <section className="about" id="about">
@@ -21,7 +26,7 @@ export default function About() {
           cada vez mais sobre tecnologias.
         </p>
         <div className="about__card">
-          <img className="card__icon" src="src/images/brain-icon.svg" />
+          <img className="about__icon" src={brainIcon} />
           <h3 className="card__title">Como eu penso?</h3>
           <p className="card__subtitle">
             Gosto de quebrar problemas grandes em partes pequenas e resolver uma
@@ -29,21 +34,21 @@ export default function About() {
           </p>
         </div>
         <div className="about__card">
-          <img className="card__icon" src="src/images/gear-icon.svg" />
+          <img className="about__icon" src={gearIcon} />
           <h3 className="card__title">Como eu trabalho?</h3>
           <p className="card__subtitle">
             Clean Code, componentização, reaproveitamento e atenção a UX.
           </p>
         </div>
         <div className="about__card">
-          <img className="card__icon" src="src/images/rocket-icon.svg" />
+          <img className="about__icon" src={rocketIcon} />
           <h3 className="card__title">O que estou buscando?</h3>
           <p className="card__subtitle">
             Oportunidade como dev / projetos freelancer / vagas remotas.
           </p>
         </div>
         <div className="about__card">
-          <img className="card__icon" src="src/images/book-icon.svg" />
+          <img className="about__icon" src={bookIcon} />
           <h3 className="card__title">Em aprendizado constante</h3>
           <p className="card__subtitle">
             Boas práticas JS, React, APIs e IA aplicada.
