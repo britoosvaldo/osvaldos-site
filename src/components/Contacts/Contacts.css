@@ -40,6 +40,11 @@
   color: #9a9797;
 }
 
+.contacts__contacts {
+  display: flex;
+  gap: 15px;
+}
+
 .contacts__mail {
   font-family: "Inter";
   color: #9a9797;
@@ -84,6 +89,7 @@
   border-radius: 10px;
   width: 400px;
   height: 450px;
+  font-family: "Inter";
 }
 
 .form__description {
@@ -101,24 +107,30 @@
   border-radius: 10px;
   border: 0.5px solid #9a9797;
   padding: 0 0 0 15px;
+  color: #ffffff;
 }
 
 .contacts__mensage {
   margin: 10px 0 0 30px;
   background-color: #000000;
   width: 320px;
-  height: 100px;
   border-radius: 10px;
   border: 0.5px solid #9a9797;
-  padding: 0 0 0 15px;
+  padding: 10px 0 0 15px;
+  resize: none;
+  color: #ffffff;
 }
 
 .contacts__btn {
   background-color: #ff8230;
   color: #ffffff;
-  margin: 15px 0 0 30px;
-  width: 334px;
+  margin: 5px 0 0 30px;
+  width: 338px;
   height: 42px;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.contacts__btn-icon {
+  padding: 0 0 0 10px;
 }

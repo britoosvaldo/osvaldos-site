@@ -1,3 +1,10 @@
+import emailIcon from "../../images/email-icon-orange.svg";
+import locationIcon from "../../images/location-icon-orange.svg";
+import gitHubIcon from "../../images/github-icon-grey.svg";
+import linkedinIcon from "../../images/linkedin-icon-grey.svg";
+import instagramIcon from "../../images/instagram-icon-grey.svg";
+import mensageIcon from "../../images/mensage-icon.svg";
+
 export default function Contacts() {
   return (
     <section className="contacts" id="contacts">
@@ -16,14 +23,14 @@ export default function Contacts() {
             projeto, entre em contato!
           </p>
           <div className="contacts__contacts">
-            <img src="src/images/email-icon-orange.svg" alt="" />
+            <img src={emailIcon} alt="E-mail Icon" />
             <p className="contacts__mail">
               E-mail <br />
               <span>osvaldobrito.dev@gmail.com</span>
             </p>
           </div>
           <div className="contacts__contacts">
-            <img src="src/images/location-icon-orange.svg" alt="" />
+            <img src={locationIcon} alt="" />
             <p className="contacts__location">
               Localização <br />
               <span>Roraima, Brasil</span>
@@ -33,22 +40,18 @@ export default function Contacts() {
             <p>Me siga nas redes</p>
             <div className="contacts__socials">
               <div className="contacts__social">
-                <img
-                  src="src/images/github-icon-grey.svg"
-                  className="main__icons"
-                  alt="GitHub"
-                />
+                <img src={gitHubIcon} className="main__icons" alt="GitHub" />
               </div>
               <div className="contacts__social">
                 <img
-                  src="src/images/linkedin-icon-grey.svg"
+                  src={linkedinIcon}
                   className="main__icons"
                   alt="LinkedIn"
                 />
               </div>
               <div className="contacts__social">
                 <img
-                  src="src/images/instagram-icon-grey.svg"
+                  src={instagramIcon}
                   className="main__icons"
                   alt="Instagram"
                 />
@@ -71,17 +74,14 @@ export default function Contacts() {
               placeholder="seu@email.com"
             />
             <h3 className="form__description">Mensagem</h3>
-            <input
+            <textarea
               className="contacts__mensage"
               type="text"
               placeholder="Conte-me sobre o seu projeto..."
             />
             <button className="contacts__btn">
               Enviar Mensagem
-              <img
-                className="contacts__btn-icon"
-                src="src/images/mensage-icon.svg"
-              />
+              <img className="contacts__btn-icon" src={mensageIcon} />
             </button>
           </form>
         </div>
