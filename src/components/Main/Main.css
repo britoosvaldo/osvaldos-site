@@ -22,7 +22,8 @@
   z-index: 1;
   pointer-events: none;
 
-  background: radial-gradient(
+  background:
+    radial-gradient(
       520px circle at var(--x, 50%) var(--y, 50%),
       rgba(255, 130, 48, 0.22),
       transparent 60%
@@ -90,7 +91,9 @@
   align-items: center;
 }
 
-.main__icons {
+.main__links {
+  width: 13px;
+  height: 16px;
 }
 
 .main__bt {
@@ -102,7 +105,10 @@
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  transition: transform 250ms ease, box-shadow 250ms ease, filter 250ms ease;
+  transition:
+    transform 250ms ease,
+    box-shadow 250ms ease,
+    filter 250ms ease;
 }
 
 .main--active .main__bt {

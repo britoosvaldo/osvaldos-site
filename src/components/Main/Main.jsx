@@ -45,13 +45,22 @@ export default function Main() {
 
       <div className="main__contacts">
         <div className="main__social">
-          <img src={gitHubIcon} className="main__icons" alt="GitHub Icon" />
+          <a className="main__links" href="https://github.com/britoosvaldo">
+            <img src={gitHubIcon} className="main__icons" alt="GitHub Icon" />
+          </a>
         </div>
         <div className="main__social">
-          <img src={linkedinIcon} className="main__icons" alt="LinkedIn" />
+          <a
+            className="main__links"
+            href="https://www.linkedin.com/in/osvaldo-brito/"
+          >
+            <img src={linkedinIcon} className="main__icons" alt="LinkedIn" />
+          </a>
         </div>
         <div className="main__social">
-          <img src={instaIcon} className="main__icons" alt="Instagram" />
+          <a className="main__links" href="">
+            <img src={instaIcon} className="main__icons" alt="Instagram" />
+          </a>
         </div>
       </div>
 

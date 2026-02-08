@@ -1,8 +1,13 @@
+import obLogo from "../../images/ob-logo.svg";
+import gitHubIcon from "../../images/github-icon.svg";
+import linkedinIcon from "../../images/linkedin-icon.svg";
+import instaIcon from "../../images/instagram-icon.svg";
+
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer__logo">
-        <img className="footer__icon" src="./src/images/ob-logo.svg" />
+        <img className="footer__icon" src={obLogo} />
       </div>
       <div className="footer__copyright">
         <p className="footer__description">
@@ -10,18 +15,9 @@ export default function Footer() {
         </p>
       </div>
       <div className="footer__socialNetwork">
-        <img
-          className="footer__icons"
-          src="./src/images/github-icon-grey.svg"
-        />
-        <img
-          className="footer__icons"
-          src="./src/images/linkedin-icon-grey.svg"
-        />
-        <img
-          className="footer__icons"
-          src="./src/images/instagram-icon-grey.svg"
-        />
+        <img className="footer__icons" src={gitHubIcon} />
+        <img className="footer__icons" src={linkedinIcon} />
+        <img className="footer__icons" src={instaIcon} />
       </div>
     </footer>
   );

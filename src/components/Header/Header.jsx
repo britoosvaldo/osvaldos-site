@@ -1,8 +1,10 @@
+import obLogo from "../../images/ob-logo.svg";
+
 export default function Header() {
   return (
     <header className="header">
       <nav className="nav">
-        <img className="nav__logo" src="./src/images/ob-logo.svg" />
+        <img className="nav__logo" src={obLogo} />
         <ul className="nav__links">
           <li>
             <a className="nav__link" href="#about">
