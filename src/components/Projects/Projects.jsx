@@ -60,7 +60,13 @@ export default function About() {
         <div className="projects__card"></div>
         <div className="projects__card"></div>
       </div>
-      <h3 className="projects__link">Veja mais no GitHub</h3>
+      <a
+        href="https://github.com/britoosvaldo?tab=repositories"
+        className="projects__link"
+      >
+        Veja mais no GitHub
+        <img className="projects__link-icon" src={siteIcon} />
+      </a>
     </section>
   );
 }

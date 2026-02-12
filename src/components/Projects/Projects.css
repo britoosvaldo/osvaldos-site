@@ -1,5 +1,5 @@
 .projects {
-  height: 740px;
+  height: 960px;
   background-color: #000000;
   color: #ffffff;
   display: flex;
@@ -112,4 +112,37 @@
   margin: 50px 0 0 0;
   color: #9a9797;
   font-family: "Saira";
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.projects__link-icon {
+  width: 15px;
+  height: 15px;
+  padding: 0 0 0 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .projects__grid {
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 20px;
+  }
+
+  .site__title {
+    margin: 0 0 0 15px;
+    font-size: 16px;
+  }
+
+  .site__description {
+    margin: 10px 15px 0 15px;
+    font-size: 13px;
+    color: #9a9797;
+  }
+
+  .site__techs {
+    margin: auto;
+    font-size: 10px;
+    color: #9a9797;
+  }
 }
