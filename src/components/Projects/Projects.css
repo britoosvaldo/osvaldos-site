@@ -1,5 +1,5 @@
 .projects {
-  height: 960px;
+  height: 750px;
   background-color: #000000;
   color: #ffffff;
   display: flex;
@@ -123,6 +123,39 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .projects {
+    height: 960px;
+  }
+
+  .projects__grid {
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 20px;
+  }
+
+  .site__title {
+    margin: 0 0 0 15px;
+    font-size: 16px;
+  }
+
+  .site__description {
+    margin: 10px 15px 0 15px;
+    font-size: 13px;
+    color: #9a9797;
+  }
+
+  .site__techs {
+    margin: auto;
+    font-size: 10px;
+    color: #9a9797;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .projects {
+    height: 500px;
+  }
+
   .projects__grid {
     grid-template-columns: repeat(2, 300px);
     grid-template-rows: repeat(3, 200px);

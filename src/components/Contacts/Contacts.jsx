@@ -8,7 +8,7 @@ import mensageIcon from "../../images/mensage-icon.svg";
 export default function Contacts() {
   return (
     <section className="contacts" id="contacts">
-      <p className="contacts__talk">// vamos conversar</p>
+      <p className="contacts__talk">// fale comigo</p>
       <h2 className="contacts__title">
         Entre em <span>contato</span>
       </h2>

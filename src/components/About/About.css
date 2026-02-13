@@ -171,10 +171,59 @@
     text-align: center;
   }
 
+  .about__title {
+    align-self: center;
+    font-size: 32px;
+    font-family: "Roboto";
+  }
+
   .card__title {
     text-align: center;
     margin: 15px 0px;
     font-size: 14px;
+  }
+
+  .card__subtitle {
+    text-align: center;
+    margin: 0 5px;
+    font-size: 12px;
+    color: #9a9797;
+  }
+
+  .about__skills-marquee {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .about__me {
+    font-size: 12px;
+  }
+
+  .about__grid {
+    margin: 0;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(4, 140px);
+    grid-template-areas:
+      "description description"
+      "description description"
+      "card card"
+      "card card";
+  }
+
+  .about__description {
+    text-align: center;
+  }
+
+  .about__description {
+    font-size: 12px;
+    width: 281px;
+    height: 185px;
+    text-align: center;
+  }
+
+  .card__title {
+    font-size: 32px;
   }
 
   .card__subtitle {

@@ -36,7 +36,7 @@ export default function Main() {
       </div>
 
       <h1 className="main__title">
-        Osvaldo <span className="main__subtitle">Brito</span>
+        Osvaldo <span>Brito</span>
       </h1>
 
       <p className="main__description">
