@@ -153,29 +153,72 @@
 
 @media screen and (max-width: 650px) {
   .projects {
-    height: 500px;
+    min-height: 1480px;
+  }
+
+  .my-projects {
+    font-size: 12px;
+  }
+
+  .projects__title {
+    font-size: 32px;
   }
 
   .projects__grid {
-    grid-template-columns: repeat(2, 300px);
-    grid-template-rows: repeat(3, 200px);
+    grid-template-columns: repeat(1, 258px);
+    grid-template-rows: repeat(6, 180px);
     gap: 20px;
   }
 
+  .projects__card {
+    width: 258px;
+    height: 180px;
+  }
+
+  .card__icon {
+    width: 30px;
+    height: 30px;
+    left: 20px;
+  }
+
+  .github__link {
+    left: 195px;
+    top: -10px;
+  }
+
+  .site__link {
+    left: 225px;
+    top: -25px;
+  }
+
   .site__title {
-    margin: 0 0 0 15px;
-    font-size: 16px;
+    margin: 0 0 0 20px;
+    font-size: 14px;
   }
 
   .site__description {
-    margin: 10px 15px 0 15px;
-    font-size: 13px;
-    color: #9a9797;
+    margin: 20px 15px 0 20px;
+    font-size: 10px;
   }
 
   .site__techs {
     margin: auto;
     font-size: 10px;
     color: #9a9797;
+  }
+
+  .projects__link {
+    align-self: center;
+    margin: 50px 0 0 0;
+    color: #9a9797;
+    font-family: "Saira";
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .projects__link-icon {
+    width: 15px;
+    height: 15px;
+    padding: 0 0 0 10px;
   }
 }
