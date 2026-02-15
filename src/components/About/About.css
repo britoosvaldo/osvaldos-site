@@ -4,7 +4,7 @@
   color: #ffffff;
   display: flex;
   flex-direction: column;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
 }
 
 .about__me {
@@ -156,6 +156,10 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .about {
+    padding-bottom: 40px;
+  }
+
   .about__grid {
     margin: 0;
     grid-template-columns: repeat(2, 200px);
@@ -165,6 +169,7 @@
       "description description"
       "card card"
       "card card";
+    gap: 10px;
   }
 
   .about__description {
@@ -200,10 +205,14 @@
     font-size: 12px;
   }
 
+  .about__description {
+    font-size: 12px;
+  }
+
   .about__grid {
     margin: 0;
-    grid-template-columns: repeat(2, 200px);
-    grid-template-rows: repeat(4, 140px);
+    grid-template-columns: repeat(2, 141px);
+    grid-template-rows: repeat(4, 100px);
     grid-template-areas:
       "description description"
       "description description"
@@ -211,29 +220,40 @@
       "card card";
   }
 
-  .about__description {
-    text-align: center;
+  .about__card {
+    width: 140px;
+    height: 100px;
   }
 
-  .about__description {
-    font-size: 12px;
-    width: 281px;
-    height: 185px;
-    text-align: center;
+  .about__icon {
+    width: 19px;
+    height: 19px;
+    margin: 10px 0 0 0;
   }
 
   .card__title {
-    font-size: 32px;
+    margin: 10px 0px;
+    font-size: 12px;
   }
 
   .card__subtitle {
-    text-align: center;
-    margin: 0 5px;
-    font-size: 12px;
-    color: #9a9797;
+    font-size: 9px;
   }
 
   .about__skills-marquee {
-    width: 450px;
+    width: 300px;
+  }
+
+  .about__tech {
+    margin: 40px 0 20px 0;
+    font-size: 14px;
+  }
+
+  .about__skills-wrapper {
+    margin: 10px auto 0;
+  }
+
+  .about__skill {
+    font-size: 10px;
   }
 }
