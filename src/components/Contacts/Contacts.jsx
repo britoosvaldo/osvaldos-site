@@ -40,19 +40,23 @@ export default function Contacts() {
             <p>Me siga nas redes</p>
             <div className="contacts__socials">
               <div className="contacts__social">
-                <img src={gitHubIcon} className="main__icons" alt="GitHub" />
+                <img
+                  src={gitHubIcon}
+                  className="contacts__icons"
+                  alt="GitHub"
+                />
               </div>
               <div className="contacts__social">
                 <img
                   src={linkedinIcon}
-                  className="main__icons"
+                  className="contacts__icons"
                   alt="LinkedIn"
                 />
               </div>
               <div className="contacts__social">
                 <img
                   src={instagramIcon}
-                  className="main__icons"
+                  className="contacts__icons"
                   alt="Instagram"
                 />
               </div>
