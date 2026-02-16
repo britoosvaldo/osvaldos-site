@@ -1,10 +1,15 @@
-import gitHubIcon from "../../images/github-icon.svg";
+import gitIcon from "../../images/github-icon.svg";
 import linkedinIcon from "../../images/linkedin-icon.svg";
 import instaIcon from "../../images/instagram-icon.svg";
 import arrowIcon from "../../images/arrow-icon.svg";
+import gitIconOrange from "../../images/github-icon-orange.svg";
+import linkedinIconOrange from "../../images/linkedin-icon-orange.svg";
+import instaIconOrange from "../../images/instagram-icon-orange.svg";
+import arrowIconBlack from "../../images/arrow-icon.svg";
 
 import { useRef, useState } from "react";
 import "./main.css";
+import HoverIcon from "../HoverIcons/HoverIcons";
 
 export default function Main() {
   const mainRef = useRef(null);
@@ -47,7 +52,7 @@ export default function Main() {
       <div className="main__contacts">
         <div className="main__social">
           <a className="main__links" href="https://github.com/britoosvaldo">
-            <img src={gitHubIcon} className="main__icons" alt="GitHub Icon" />
+            <HoverIcon white={gitIcon} orange={gitIconOrange} alt="GitHub" />
           </a>
         </div>
         <div className="main__social">
@@ -55,12 +60,21 @@ export default function Main() {
             className="main__links"
             href="https://www.linkedin.com/in/osvaldo-brito/"
           >
-            <img src={linkedinIcon} className="main__icons" alt="LinkedIn" />
+            <HoverIcon
+              white={linkedinIcon}
+              orange={linkedinIconOrange}
+              alt="LinkedIn"
+            />
           </a>
         </div>
         <div className="main__social">
           <a className="main__links" href="">
-            <img src={instaIcon} className="main__icons" alt="Instagram" />
+            <HoverIcon
+              HoverIcon
+              white={instaIcon}
+              orange={instaIconOrange}
+              alt="Instagram"
+            />
           </a>
         </div>
       </div>
