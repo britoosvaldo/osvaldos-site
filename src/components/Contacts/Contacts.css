@@ -75,7 +75,7 @@
   gap: 30px;
 }
 
-.contacts__social {
+.contacts__links .contacts__social {
   width: 40px;
   height: 40px;
   border: 1px solid #9a9797;
@@ -142,7 +142,7 @@
     justify-content: center;
     display: grid;
     grid-template-columns: 400px;
-    gap: 60px;
+    gap: 40px;
   }
 }
 

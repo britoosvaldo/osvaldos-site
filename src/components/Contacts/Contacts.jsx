@@ -36,32 +36,7 @@ export default function Contacts() {
               <span>Roraima, Brasil</span>
             </p>
           </div>
-          <div className="contacts__follow">
-            <p>Me siga nas redes</p>
-            <div className="contacts__socials">
-              <div className="contacts__social">
-                <img
-                  src={gitHubIcon}
-                  className="contacts__icons"
-                  alt="GitHub"
-                />
-              </div>
-              <div className="contacts__social">
-                <img
-                  src={linkedinIcon}
-                  className="contacts__icons"
-                  alt="LinkedIn"
-                />
-              </div>
-              <div className="contacts__social">
-                <img
-                  src={instagramIcon}
-                  className="contacts__icons"
-                  alt="Instagram"
-                />
-              </div>
-            </div>
-          </div>
+          <div className="contacts__follow"></div>
         </div>
         <div className="contacts__box">
           <form className="contacts__form">

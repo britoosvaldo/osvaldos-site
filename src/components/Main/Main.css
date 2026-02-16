@@ -73,6 +73,11 @@
   font-size: 20px;
 }
 
+.main__icons {
+  width: 20px;
+  height: 20px;
+}
+
 .main__contacts {
   width: 150px;
   display: flex;
@@ -82,8 +87,8 @@
 }
 
 .main__social {
-  width: 31px;
-  height: 31px;
+  width: 35px;
+  height: 35px;
   border: 1px solid #ffffff;
   border-radius: 20px;
   display: flex;
@@ -91,13 +96,18 @@
   align-items: center;
 }
 
+.main__social:hover {
+  border: 1px solid #1c1c1c;
+}
+
 .main__links {
-  width: 13px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
 }
 
 .main__bt {
   background-color: #ff8230;
+  color: #ffffff;
   margin: 30px 0 0 0;
   padding: 12px 28px;
   border: none;
@@ -114,6 +124,10 @@
 .main--active .main__bt {
   transform: translateY(-4px) scale(1.02);
   filter: brightness(1.1);
+}
+
+.bt__icon {
+  padding: 0 0 0 10px;
 }
 
 @media screen and (max-width: 650px) {

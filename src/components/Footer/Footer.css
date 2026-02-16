@@ -3,14 +3,14 @@
   background-color: #000000;
   color: #fff;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   font-family: "Inter";
-  justify-content: center;
+
   align-items: center;
-  gap: 450px;
 }
 
 .footer__logo {
+  justify-content: end;
   width: 116px;
   height: 30px;
   margin: 20px;

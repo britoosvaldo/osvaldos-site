@@ -1,6 +1,7 @@
 import gitHubIcon from "../../images/github-icon.svg";
 import linkedinIcon from "../../images/linkedin-icon.svg";
 import instaIcon from "../../images/instagram-icon.svg";
+import arrowIcon from "../../images/arrow-icon.svg";
 
 import { useRef, useState } from "react";
 import "./main.css";
@@ -64,7 +65,10 @@ export default function Main() {
         </div>
       </div>
 
-      <button className="main__bt">Ver Projetos</button>
+      <button className="main__bt">
+        Ver Projetos
+        <img className="bt__icon" src={arrowIcon} />
+      </button>
     </main>
   );
 }
