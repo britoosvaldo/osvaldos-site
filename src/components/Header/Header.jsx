@@ -8,6 +8,11 @@ export default function Header() {
         <ul className="nav__links">
           <li>
             <a className="nav__link" href="#about">
+              Início
+            </a>
+          </li>
+          <li>
+            <a className="nav__link" href="#about">
               Sobre
             </a>
           </li>
@@ -20,9 +25,6 @@ export default function Header() {
             <a className="nav__link" href="#contacts">
               Contatos
             </a>
-          </li>
-          <li>
-            <button className="nav__link nav__button">Fale Comigo</button>
           </li>
         </ul>
       </nav>

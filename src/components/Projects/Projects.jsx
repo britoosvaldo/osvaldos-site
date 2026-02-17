@@ -1,7 +1,11 @@
-import gitHubIcon from "../../images/github-icon-grey.svg";
+import gitIcon from "../../images/github-icon-grey.svg";
 import siteIcon from "../../images/link-icon-grey.svg";
 import usersIcon from "../../images/users-icon.svg";
 import newsPaperIcon from "../../images/newspaper-icon.svg";
+import gitIconOrange from "../../images/github-icon-orange.svg";
+import siteIconOrange from "../../images/link-icon-orange.svg";
+
+import HoverIcon from "../HoverIcons/HoverIcons";
 
 export default function About() {
   return (
@@ -10,7 +14,6 @@ export default function About() {
       <h2 className="projects__title">
         Trabalhos <span>recentes</span>
       </h2>
-
       <div className="projects__grid">
         <div className="projects__card">
           <img className="card__icon" src={usersIcon} />
@@ -18,10 +21,18 @@ export default function About() {
             className="github__link"
             href="https://github.com/britoosvaldo/web_project_api_full"
           >
-            <img className="github__icon" src={gitHubIcon} />
+            <HoverIcon
+              firstColor={gitIcon}
+              secondColor={gitIconOrange}
+              alt="GitHub"
+            />
           </a>
           <a className="site__link" href="https://around-the-usa.mooo.com">
-            <img className="site__icon" src={siteIcon} />
+            <HoverIcon
+              firstColor={siteIcon}
+              secondColor={siteIconOrange}
+              alt="Link"
+            />
           </a>
           <h3 className="site__title">Around the USA</h3>
           <p className="site__description">
@@ -39,10 +50,18 @@ export default function About() {
             className="github__link"
             href="https://github.com/britoosvaldo/web-news-frontend"
           >
-            <img className="github__icon" src={gitHubIcon} />
+            <HoverIcon
+              firstColor={gitIcon}
+              secondColor={gitIconOrange}
+              alt="GitHub"
+            />
           </a>
           <a className="site__link" href="">
-            <img className="site__icon" src={siteIcon} />
+            <HoverIcon
+              firstColor={siteIcon}
+              secondColor={siteIconOrange}
+              alt="Link"
+            />
           </a>
           <h3 className="site__title">Web News</h3>
           <p className="site__description">
@@ -60,13 +79,19 @@ export default function About() {
         <div className="projects__card"></div>
         <div className="projects__card"></div>
       </div>
-      <a
-        href="https://github.com/britoosvaldo?tab=repositories"
-        className="projects__link"
-      >
-        Veja mais no GitHub
-        <img className="projects__link-icon" src={siteIcon} />
-      </a>
+      <div className="projects__link">
+        <a
+          href="https://github.com/britoosvaldo?tab=repositories"
+          className="projects__link-text"
+        >
+          Veja mais no GitHub
+          <HoverIcon
+            firstColor={siteIcon}
+            secondColor={siteIconOrange}
+            alt="Link to GitHub"
+          />
+        </a>
+      </div>
     </section>
   );
 }

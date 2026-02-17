@@ -28,7 +28,7 @@
   display: grid;
   grid-template-columns: repeat(3, 300px);
   grid-template-rows: repeat(2, 200px);
-  gap: 40px;
+  gap: 25px;
   justify-content: center;
   align-items: center;
 }
@@ -38,6 +38,7 @@
   height: 200px;
   border: 0.5px solid #717070;
   border-radius: 10px;
+  transition: all 0.3s ease;
   background-color: #262626;
   display: flex;
   flex-direction: column;
@@ -51,6 +52,14 @@
     0 10px 30px rgba(0, 0, 0, 0.4),
     0 0 0 1px rgba(255, 130, 48, 0.4),
     0 0 20px rgba(255, 130, 48, 0.25);
+}
+
+.github__link:hover .icon--white {
+  opacity: 0;
+}
+
+.github__link:hover .icon--orange {
+  opacity: 1;
 }
 
 .card__icon {
@@ -71,9 +80,12 @@
   cursor: pointer;
 }
 
-.github__icon {
-  width: 15px;
-  height: 15px;
+.github__link:hover .icon--white {
+  opacity: 0;
+}
+
+.github__link:hover .icon--orange {
+  opacity: 1;
 }
 
 .site__link {
@@ -83,6 +95,14 @@
   left: 270px;
   top: -35px;
   cursor: pointer;
+}
+
+.site__link:hover .icon--white {
+  opacity: 0;
+}
+
+.site__link:hover .icon--orange {
+  opacity: 1;
 }
 
 .site__icon {
@@ -107,19 +127,36 @@
   color: #9a9797;
 }
 
-.projects__link {
+.projects__link-text {
+  width: 190px;
   align-self: center;
   margin: 50px 0 0 0;
   color: #9a9797;
   font-family: "Saira";
   cursor: pointer;
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1;
 }
 
-.projects__link-icon {
-  width: 15px;
-  height: 15px;
-  padding: 0 0 0 10px;
+.projects__link-text:hover {
+  color: #ff8230;
+}
+
+.projects__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects__link:hover .icon--white {
+  opacity: 0;
+}
+
+.projects__link:hover .icon--orange {
+  opacity: 1;
 }
 
 @media screen and (max-width: 1024px) {

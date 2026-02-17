@@ -52,7 +52,11 @@ export default function Main() {
       <div className="main__contacts">
         <div className="main__social">
           <a className="main__links" href="https://github.com/britoosvaldo">
-            <HoverIcon white={gitIcon} orange={gitIconOrange} alt="GitHub" />
+            <HoverIcon
+              firstColor={gitIcon}
+              secondColor={gitIconOrange}
+              alt="GitHub"
+            />
           </a>
         </div>
         <div className="main__social">
@@ -61,8 +65,8 @@ export default function Main() {
             href="https://www.linkedin.com/in/osvaldo-brito/"
           >
             <HoverIcon
-              white={linkedinIcon}
-              orange={linkedinIconOrange}
+              firstColor={linkedinIcon}
+              secondColor={linkedinIconOrange}
               alt="LinkedIn"
             />
           </a>
@@ -71,8 +75,8 @@ export default function Main() {
           <a className="main__links" href="">
             <HoverIcon
               HoverIcon
-              white={instaIcon}
-              orange={instaIconOrange}
+              firstColor={instaIcon}
+              secondColor={instaIconOrange}
               alt="Instagram"
             />
           </a>

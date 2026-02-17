@@ -1,10 +1,8 @@
-import { useState } from "react";
-
-export default function HoverIcon({ white, orange, alt }) {
+export default function HoverIcon({ firstColor, secondColor, alt }) {
   return (
     <div className="hover-icon">
-      <img src={white} alt={alt} className="icon icon--white" />
-      <img src={orange} alt={alt} className="icon icon--orange" />
+      <img src={firstColor} alt={alt} className="icon icon--white" />
+      <img src={secondColor} alt={alt} className="icon icon--orange" />
     </div>
   );
 }

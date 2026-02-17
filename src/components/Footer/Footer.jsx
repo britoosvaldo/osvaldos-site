@@ -1,7 +1,12 @@
 import obLogo from "../../images/ob-logo.svg";
-import gitHubIcon from "../../images/github-icon.svg";
-import linkedinIcon from "../../images/linkedin-icon.svg";
-import instaIcon from "../../images/instagram-icon.svg";
+import gitIcon from "../../images/github-icon-grey.svg";
+import linkedinIcon from "../../images/linkedin-icon-grey.svg";
+import instaIcon from "../../images/instagram-icon-grey.svg";
+import gitIconOrange from "../../images/github-icon-orange.svg";
+import linkedinIconOrange from "../../images/linkedin-icon-orange.svg";
+import instaIconOrange from "../../images/instagram-icon-orange.svg";
+
+import HoverIcon from "../HoverIcons/HoverIcons";
 
 export default function Footer() {
   return (
@@ -15,15 +20,33 @@ export default function Footer() {
         </p>
       </div>
       <div className="footer__socialNetwork">
-        <a href="https://github.com/britoosvaldo">
-          <img className="footer__icons" src={gitHubIcon} />
-        </a>
-        <a href="https://www.linkedin.com/in/osvaldo-brito/">
-          <img className="footer__icons" src={linkedinIcon} />
-        </a>
-        <a href="">
-          <img className="footer__icons" src={instaIcon} />
-        </a>
+        <div className="footer__git-icon">
+          <a href="https://github.com/britoosvaldo">
+            <HoverIcon
+              firstColor={gitIcon}
+              secondColor={gitIconOrange}
+              alt="GitHub"
+            />
+          </a>
+        </div>
+        <div className="footer__git-icon">
+          <a href="https://www.linkedin.com/in/osvaldo-brito/">
+            <HoverIcon
+              firstColor={linkedinIcon}
+              secondColor={linkedinIconOrange}
+              alt="LinkedIn"
+            />
+          </a>
+        </div>
+        <div className="footer__git-icon">
+          <a href="">
+            <HoverIcon
+              firstColor={instaIcon}
+              secondColor={instaIconOrange}
+              alt="Instagram"
+            />
+          </a>
+        </div>
       </div>
     </footer>
   );
