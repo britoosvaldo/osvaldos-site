@@ -82,11 +82,12 @@ export default function Main() {
           </a>
         </div>
       </div>
-
-      <button className="main__bt">
-        Ver Projetos
-        <img className="bt__icon" src={arrowIcon} />
-      </button>
+      <a className="main__link" href="#projects">
+        <button className="main__bt">
+          Ver Projetos
+          <img className="bt__icon" src={arrowIcon} />
+        </button>
+      </a>
     </main>
   );
 }

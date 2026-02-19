@@ -150,11 +150,18 @@
   opacity: 1;
 }
 
+.main__link {
+  margin: 50px 0 0 0;
+  width: 150px;
+  height: 40px;
+}
+
 .main__bt {
   background-color: #ff8230;
   color: #ffffff;
-  margin: 50px 0 0 0;
-  padding: 12px 28px;
+
+  width: 150px;
+  height: 40px;
   border: none;
   border-radius: 20px;
   font-size: 16px;

@@ -14,11 +14,11 @@ export default function Footer() {
       <div className="footer__logo">
         <img className="footer__icon" src={obLogo} />
       </div>
-      <div className="footer__copyright">
-        <p className="footer__description">
-          2026 &copy; Desenvolvido por Osvaldo Brito
-        </p>
-      </div>
+
+      <p className="footer__description">
+        2026 &copy; Desenvolvido por Osvaldo Brito
+      </p>
+
       <div className="footer__socialNetwork">
         <div className="footer__git-icon">
           <a href="https://github.com/britoosvaldo">

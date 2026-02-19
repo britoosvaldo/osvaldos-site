@@ -145,6 +145,7 @@
 }
 
 .projects__link {
+  margin: 0;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -245,7 +246,7 @@
 
   .projects__link {
     align-self: center;
-    margin: 50px 0 0 0;
+    margin: 0;
     color: #9a9797;
     font-family: "Saira";
     cursor: pointer;

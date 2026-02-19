@@ -12,18 +12,16 @@ export default function About() {
       </h2>
       <div className="about__grid">
         <p className="about__description">
-          Olá! Sou um contador que migrou para a área de tecnologia e hoje sou
-          um desenvolvedor full stack. Minha jornada de programação começou por
-          curiosidade e se transformou em uma paixão.
+          Olá! Sou contador e desenvolvedor web. Minha jornada de programação
+          começou por gostar de tecnologias digitais e curiosidade.Busco sempre
+          entregar código limpo, de fácil entendimento e de fácil manutenção
+          assim como esse site que você está vendo.
           <br />
           <br />
-          Busco sempre entregar código limpo, de fácil entendimento e de fácil
-          manutenção.
-          <br />
-          <br />
-          Quando não estou codando, estou procurando aprender novas tecnologias
-          tanto na área de programação quanto na área de IA e buscando aprender
-          cada vez mais sobre tecnologias.
+          Quando não estou programando, estou procurando aprender novas
+          tecnologias na área de programação e buscando aprender cada vez mais
+          sobre novas tecnolgias e ferramentas que ajudem no desenvolvimento de
+          sites e aplicativos eficientes .
         </p>
         <div className="about__card">
           <img className="about__icon" src={brainIcon} />

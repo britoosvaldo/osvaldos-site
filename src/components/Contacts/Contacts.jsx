@@ -18,9 +18,8 @@ export default function Contacts() {
             Vamos criar algo incrível juntos?
           </h3>
           <p className="contacts__description">
-            Estou sempre pronto para realizar novos projetos e agarrar
-            oportunidades. Se você tem uma ideia ou precisa de ajuda com seu
-            projeto, entre em contato!
+            Estou sempre pronto para aprender e realizar novos projetos. Se você
+            tem uma ideia ou precisa de ajuda com seu projeto, entre em contato!
           </p>
           <div className="contacts__contacts">
             <img src={emailIcon} alt="E-mail Icon" />

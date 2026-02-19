@@ -81,7 +81,7 @@ html {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 650px) {
   .nav__toggle {
     display: block;
     align-self: center;

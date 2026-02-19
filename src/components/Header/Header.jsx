@@ -25,7 +25,7 @@ export default function Header() {
           <li>
             <a
               className="nav__link"
-              href="#about"
+              href="#home"
               onClick={() => setIsOpen(false)}
             >
               Início
