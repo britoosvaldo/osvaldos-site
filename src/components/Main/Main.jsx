@@ -37,19 +37,19 @@ export default function Main() {
     >
       <div className="main__glow" aria-hidden="true" />
 
-      <div className="main__icon">
+      <div className="main__icon reveal" style={{ "--delay": "0ms" }}>
         <p className="main__developer">&lt;desenvolvedor/&gt;</p>
       </div>
 
-      <h1 className="main__title">
+      <h1 className="main__title reveal" style={{ "--delay": "80ms" }}>
         Osvaldo <span>Brito</span>
       </h1>
 
-      <p className="main__description">
+      <p className="main__description reveal" style={{ "--delay": "160ms" }}>
         Desenvolvedor Web focado em performance, resultado e experiência.
       </p>
 
-      <div className="main__contacts">
+      <div className="main__contacts reveal" style={{ "--delay": "240ms" }}>
         <div className="main__social">
           <a className="main__links" href="https://github.com/britoosvaldo">
             <HoverIcon
@@ -82,7 +82,12 @@ export default function Main() {
           </a>
         </div>
       </div>
-      <a className="main__link" href="#projects">
+
+      <a
+        className="main__link reveal"
+        style={{ "--delay": "320ms" }}
+        href="#projects"
+      >
         <button className="main__bt">
           Ver Projetos
           <img className="bt__icon" src={arrowIcon} />

@@ -6,12 +6,16 @@ import bookIcon from "../../images/book-icon.svg";
 export default function About() {
   return (
     <section className="about" id="about">
-      <p className="about__me">// sobre mim</p>
-      <h2 className="about__title">
+      <p className="about__me reveal" style={{ "--delay": "0ms" }}>
+        // sobre mim
+      </p>
+
+      <h2 className="about__title reveal" style={{ "--delay": "80ms" }}>
         Quem sou <span>eu</span>
       </h2>
+
       <div className="about__grid">
-        <p className="about__description">
+        <p className="about__description reveal" style={{ "--delay": "160ms" }}>
           Olá! Sou contador e desenvolvedor web. Minha jornada de programação
           começou por gostar de tecnologias digitais e curiosidade.Busco sempre
           entregar código limpo, de fácil entendimento e de fácil manutenção
@@ -23,30 +27,34 @@ export default function About() {
           sobre novas tecnolgias e ferramentas que ajudem no desenvolvimento de
           sites e aplicativos eficientes .
         </p>
-        <div className="about__card">
-          <img className="about__icon" src={brainIcon} />
+
+        <div className="about__card reveal" style={{ "--delay": "240ms" }}>
+          <img className="about__icon" src={brainIcon} alt="Ícone cérebro" />
           <h3 className="card__title">Como eu penso?</h3>
           <p className="card__subtitle">
             Gosto de quebrar problemas grandes em partes pequenas e resolver uma
             por uma.
           </p>
         </div>
-        <div className="about__card">
-          <img className="about__icon" src={gearIcon} />
+
+        <div className="about__card reveal" style={{ "--delay": "320ms" }}>
+          <img className="about__icon" src={gearIcon} alt="Ícone engrenagem" />
           <h3 className="card__title">Como eu trabalho?</h3>
           <p className="card__subtitle">
             Clean Code, componentização, reaproveitamento e atenção a UX.
           </p>
         </div>
-        <div className="about__card">
-          <img className="about__icon" src={rocketIcon} />
+
+        <div className="about__card reveal" style={{ "--delay": "400ms" }}>
+          <img className="about__icon" src={rocketIcon} alt="Ícone foguete" />
           <h3 className="card__title">O que estou buscando?</h3>
           <p className="card__subtitle">
             Oportunidade como dev / projetos freelancer / vagas remotas.
           </p>
         </div>
-        <div className="about__card">
-          <img className="about__icon" src={bookIcon} />
+
+        <div className="about__card reveal" style={{ "--delay": "480ms" }}>
+          <img className="about__icon" src={bookIcon} alt="Ícone livro" />
           <h3 className="card__title">Em aprendizado constante</h3>
           <p className="card__subtitle">
             Boas práticas JS, React, APIs e IA aplicada.
@@ -54,9 +62,14 @@ export default function About() {
         </div>
       </div>
 
-      <h3 className="about__tech">Tecnologias Utilizadas</h3>
+      <h3 className="about__tech reveal" style={{ "--delay": "120ms" }}>
+        Tecnologias Utilizadas
+      </h3>
 
-      <div className="about__skills-wrapper">
+      <div
+        className="about__skills-wrapper reveal"
+        style={{ "--delay": "200ms" }}
+      >
         <div className="about__skills-marquee">
           <div className="about__skills-track">
             <div className="about__skill">
@@ -80,6 +93,7 @@ export default function About() {
             <div className="about__skill">
               <p>Git</p>
             </div>
+
             <div className="about__skill">
               <p>HTML</p>
             </div>

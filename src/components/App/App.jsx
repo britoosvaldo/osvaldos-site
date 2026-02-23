@@ -6,9 +6,10 @@ import About from "../About/About";
 import Projects from "../Projects/Projects";
 import Contacts from "../Contacts/Contacts";
 import Footer from "../Footer/Footer";
+import { useRevealOnScroll } from "../../hooks/useRevealOnScroll";
 
 function App() {
-  const [count, setCount] = useState(0);
+  useRevealOnScroll();
 
   return (
     <>
