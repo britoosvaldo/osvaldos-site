@@ -16,3 +16,5 @@ Front-end
 - Site responsivo (desktop, tablet, celular)
 - Links para as redes sociais e projetos
 - Carrossel para as linguagens de programação que já trabalhei
+
+Link do GitHub: https://britoosvaldo.github.io/osvaldos-site/
