@@ -27,13 +27,7 @@ export default function About() {
               alt="GitHub"
             />
           </a>
-          <a className="site__link" href="https://around-the-usa.mooo.com">
-            <HoverIcon
-              firstColor={siteIcon}
-              secondColor={siteIconOrange}
-              alt="Link"
-            />
-          </a>
+
           <h3 className="site__title">Around the USA</h3>
           <p className="site__description">
             Rede Social que permite aos usuários compartilhar fotos, editar seu
@@ -56,13 +50,7 @@ export default function About() {
               alt="GitHub"
             />
           </a>
-          <a className="site__link" href="">
-            <HoverIcon
-              firstColor={siteIcon}
-              secondColor={siteIconOrange}
-              alt="Link"
-            />
-          </a>
+
           <h3 className="site__title">Web News</h3>
           <p className="site__description">
             Site de pesquisa de notícias, onde o usuário, após ter feito
