@@ -8,7 +8,6 @@ import instaIconOrange from "../../images/instagram-icon-orange.svg";
 import arrowIconBlack from "../../images/arrow-icon.svg";
 
 import { useRef, useState } from "react";
-import "./Main.css";
 import HoverIcon from "../HoverIcons/HoverIcons";
 
 export default function Main() {
