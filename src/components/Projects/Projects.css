@@ -88,35 +88,18 @@
   opacity: 1;
 }
 
-.site__link {
-  width: 15px;
-  height: 15px;
-  position: relative;
-  left: 230px;
-  top: -35px;
-  cursor: pointer;
-}
-
-.site__link:hover .icon--white {
-  opacity: 0;
-}
-
-.site__link:hover .icon--orange {
-  opacity: 1;
-}
-
 .site__icon {
   width: 15px;
   height: 15px;
 }
 
 .site__title {
-  margin: 10px 0 0 15px;
+  margin: 20px 0 0 15px;
   font-size: 18px;
 }
 
 .site__description {
-  margin: 10px 15px 0 15px;
+  margin: 15px 15px 0 15px;
   font-size: 14px;
   color: #9a9797;
 }
