@@ -44,6 +44,14 @@
   color: #9a9797;
 }
 
+.about__cards {
+  grid-area: card;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
 .about__card {
   width: 200px;
   height: 140px;
@@ -58,12 +66,9 @@
 }
 
 .about__card:hover {
-  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+  transform: scale(1.01);
   border-color: #ff8230;
-  box-shadow:
-    0 10px 30px rgba(0, 0, 0, 0.4),
-    0 0 0 1px rgba(255, 130, 48, 0.4),
-    0 0 20px rgba(255, 130, 48, 0.25);
 }
 
 .about__icon {

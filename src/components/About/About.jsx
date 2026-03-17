@@ -28,37 +28,43 @@ export default function About() {
           sites e aplicativos eficientes .
         </p>
 
-        <div className="about__card reveal" style={{ "--delay": "240ms" }}>
-          <img className="about__icon" src={brainIcon} alt="Ícone cérebro" />
-          <h3 className="card__title">Como eu penso?</h3>
-          <p className="card__subtitle">
-            Gosto de quebrar problemas grandes em partes pequenas e resolver uma
-            por uma.
-          </p>
-        </div>
+        <div className="about__cards reveal" style={{ "--delay": "320ms" }}>
+          <div className="about__card">
+            <img className="about__icon" src={brainIcon} alt="Ícone cérebro" />
+            <h3 className="card__title">Como eu penso?</h3>
+            <p className="card__subtitle">
+              Gosto de quebrar problemas grandes em partes pequenas e resolver
+              uma por uma.
+            </p>
+          </div>
 
-        <div className="about__card reveal" style={{ "--delay": "320ms" }}>
-          <img className="about__icon" src={gearIcon} alt="Ícone engrenagem" />
-          <h3 className="card__title">Como eu trabalho?</h3>
-          <p className="card__subtitle">
-            Clean Code, componentização, reaproveitamento e atenção a UX.
-          </p>
-        </div>
+          <div className="about__card">
+            <img
+              className="about__icon"
+              src={gearIcon}
+              alt="Ícone engrenagem"
+            />
+            <h3 className="card__title">Como eu trabalho?</h3>
+            <p className="card__subtitle">
+              Clean Code, componentização, reaproveitamento e atenção a UX.
+            </p>
+          </div>
 
-        <div className="about__card reveal" style={{ "--delay": "400ms" }}>
-          <img className="about__icon" src={rocketIcon} alt="Ícone foguete" />
-          <h3 className="card__title">O que estou buscando?</h3>
-          <p className="card__subtitle">
-            Oportunidade como dev / projetos freelancer / vagas remotas.
-          </p>
-        </div>
+          <div className="about__card">
+            <img className="about__icon" src={rocketIcon} alt="Ícone foguete" />
+            <h3 className="card__title">O que estou buscando?</h3>
+            <p className="card__subtitle">
+              Oportunidade como dev / projetos freelancer / vagas remotas.
+            </p>
+          </div>
 
-        <div className="about__card reveal" style={{ "--delay": "480ms" }}>
-          <img className="about__icon" src={bookIcon} alt="Ícone livro" />
-          <h3 className="card__title">Em aprendizado constante</h3>
-          <p className="card__subtitle">
-            Boas práticas JS, React, APIs e IA aplicada.
-          </p>
+          <div className="about__card">
+            <img className="about__icon" src={bookIcon} alt="Ícone livro" />
+            <h3 className="card__title">Em aprendizado constante</h3>
+            <p className="card__subtitle">
+              Boas práticas JS, React, APIs e IA aplicada.
+            </p>
+          </div>
         </div>
       </div>
 
