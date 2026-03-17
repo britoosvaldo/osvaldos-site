@@ -5,7 +5,6 @@ import arrowIcon from "../../images/arrow-icon.svg";
 import gitIconOrange from "../../images/github-icon-orange.svg";
 import linkedinIconOrange from "../../images/linkedin-icon-orange.svg";
 import instaIconOrange from "../../images/instagram-icon-orange.svg";
-import arrowIconBlack from "../../images/arrow-icon.svg";
 
 import { useRef, useState } from "react";
 import HoverIcon from "../HoverIcons/HoverIcons";
