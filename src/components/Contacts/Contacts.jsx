@@ -12,17 +12,15 @@ export default function Contacts() {
     e.preventDefault();
     setIsSending(true);
 
-    // --- COLOQUE SEUS IDs AQUI ---
-    const SERVICE_ID = "service_5peuzvl"; // Encontrado em "Email Services"
-    const TEMPLATE_ID = "template_r3xrhk4"; // Encontrado em "Email Templates"
-    const PUBLIC_KEY = "OgUDj2VmbZuXqeioI"; // Encontrado em "Account" -> "API Keys"
-    // ----------------------------
+    const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
     emailjs
       .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
       .then(() => {
         alert("Mensagem enviada com sucesso! 🚀");
-        e.target.reset(); // Limpa o formulário após o envio
+        e.target.reset();
       })
       .catch((error) => {
         console.error("Erro ao enviar e-mail:", error);
@@ -77,7 +75,7 @@ export default function Contacts() {
           <form ref={form} onSubmit={sendEmail} className="contacts__form">
             <h3 className="form__description">Nome</h3>
             <input
-              name="name" // Mapeia para {{name}} no seu template
+              name="name"
               className="contacts__name"
               type="text"
               placeholder="Seu nome"
@@ -86,7 +84,7 @@ export default function Contacts() {
 
             <h3 className="form__description">E-mail</h3>
             <input
-              name="email" // Mapeia para {{email}} no seu template
+              name="email"
               className="contacts__email"
               type="email"
               placeholder="seu@email.com"
@@ -95,7 +93,7 @@ export default function Contacts() {
 
             <h3 className="form__description">Mensagem</h3>
             <textarea
-              name="message" // Mapeia para {{message}} no seu template
+              name="message"
               className="contacts__mensage"
               placeholder="Conte-me sobre o seu projeto..."
               required
